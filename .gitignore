@@ -1,0 +1,5 @@
+/video/
+/data/
+/node_modules/
+package-lock.json
+```

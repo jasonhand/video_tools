@@ -33,8 +33,8 @@ def clip_video(source_path, timestamps, output_path):
     final_clip.write_videofile(output_path, codec='libx264', audio_codec='aac')
 
 # Example usage
-source_video_path = 'video/original/input.mov'
-output_video_path = 'video/shortened/output.mov'
+source_video_path = '../../video/original/input.mov'
+output_video_path = '../../video/shortened/output.mov'
 timestamps = [
  ('00:04', '02:00'),
  ('02:04', '02:11'),

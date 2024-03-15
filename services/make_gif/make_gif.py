@@ -40,7 +40,7 @@ def convert_video_to_high_quality_gif(input_video_path, output_gif_path, palette
             print(f"Error removing the palette file {palette_path}")
 
 # Example usage
-input_video_path = 'video/shortened/input.mov'
-output_gif_path = 'video/gif/ouput.gif'
+input_video_path = '../../video/shortened/input.mov'
+output_gif_path = '../../video/gif/ouput.gif'
 
 convert_video_to_high_quality_gif(input_video_path, output_gif_path)

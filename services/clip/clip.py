@@ -1,6 +1,6 @@
 import subprocess
 
-def trim_and_enhance_video(input_file, output_file, trim_start=4):
+def trim_and_enhance_video(input_file, output_file, trim_start=6):
     """
     Trims the first 4 seconds off the given video file and enhances its quality using FFmpeg.
 
@@ -26,7 +26,7 @@ def trim_and_enhance_video(input_file, output_file, trim_start=4):
         print(f"An error occurred: {e}")
 
 # Example usage
-input_video = 'video/original/input.mp4'  # Replace with your video file path
-output_video = 'video/clipped/output.mp4'  # Replace with your desired output path
+input_video = '../../video/original/S63168.mp4'  # Replace with your video file path
+output_video = '../../video/clipped/S63168-clipped.mp4'  # Replace with your desired output path
 
 trim_and_enhance_video(input_video, output_video)

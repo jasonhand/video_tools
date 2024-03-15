@@ -24,7 +24,7 @@ def double_speed(input_video_path, output_video_path):
         print(f"Error during video processing: {e}")
 
 # Example usage
-input_video_path = 'video/shortened/input.mov'
-output_video_path = 'video/2xSpeed/output.mov'
+input_video_path = '../../video/shortened/input.mov'
+output_video_path = '../../video/2xSpeed/output.mov'
 
 double_speed(input_video_path, output_video_path)

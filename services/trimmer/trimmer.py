@@ -26,6 +26,6 @@ def trim_video(input_video_path, output_video_path, trim_duration="1:00"):
         print(f"Error trimming video: {e}")
 
 # Example usage
-input_video = "../../video/original/slides.mp4"
-output_video = "../../video/original/trimmed-slides.mp4"
+input_video = "../../output/original/slides.mp4"
+output_video = "../../output/original/trimmed-slides.mp4"
 trim_video(input_video, output_video)

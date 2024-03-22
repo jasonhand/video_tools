@@ -26,7 +26,7 @@ def trim_and_enhance_video(input_file, output_file, trim_start=6):
         print(f"An error occurred: {e}")
 
 # Example usage
-input_video = '../../video/original/S63168.mp4'  # Replace with your video file path
-output_video = '../../video/clipped/S63168-clipped.mp4'  # Replace with your desired output path
+input_video = '../../output/original/S63168.mp4'  # Replace with your video file path
+output_video = '../../output/clipped/S63168-clipped.mp4'  # Replace with your desired output path
 
 trim_and_enhance_video(input_video, output_video)

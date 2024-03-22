@@ -16,12 +16,12 @@ desired_height = 1920
 background_color = (99, 44, 166)  # Datadog Purple
 
 # Use ffmpeg to resize videos
-resize_video_with_ffmpeg('../../video/original/speakers.mp4', '../../video/original/resized_speakers.mp4', desired_width)
-resize_video_with_ffmpeg('../../video/original/no-black-bars-slides.mp4', '../../video/original/resized-no-black-bars-slides.mp4', desired_width)
+resize_video_with_ffmpeg('../../output/original/speakers.mp4', '../../output/original/resized_speakers.mp4', desired_width)
+resize_video_with_ffmpeg('../../output/original/no-black-bars-slides.mp4', '../../output/original/resized-no-black-bars-slides.mp4', desired_width)
 
 # Load the resized video files
-speakers_video_resized = VideoFileClip("../../video/original/resized_speakers.mp4")
-slides_video_resized = VideoFileClip("../../video/original/resized-no-black-bars-slides.mp4").without_audio()
+speakers_video_resized = VideoFileClip("../../output/original/resized_speakers.mp4")
+slides_video_resized = VideoFileClip("../../output/original/resized-no-black-bars-slides.mp4").without_audio()
 
 # Calculate the combined height of the speaker and slide videos to adjust their positions
 combined_video_height = speakers_video_resized.size[1] + slides_video_resized.size[1]
@@ -47,5 +47,5 @@ final_clip = CompositeVideoClip([
 final_clip = final_clip.set_audio(speakers_video_resized.audio)
 
 # Output file path and write the file
-output_file = "../../video/original/combined_video_portrait.mp4"
+output_file = "../../output/original/combined_video_portrait.mp4"
 final_clip.write_videofile(output_file, codec="libx264", audio_codec="aac", fps=24)

@@ -1,4 +1,4 @@
-# Video Speed Doubling Utility README
+# Video Speed Doubling
 
 This Python script utilizes FFmpeg to double the speed of a given video file. By adjusting the video's playback speed, it creates a new version that plays twice as fast as the original. This utility can be particularly useful for creating time-lapse effects or shortening videos without altering their content.
 

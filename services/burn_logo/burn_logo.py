@@ -31,9 +31,9 @@ def burn_image_into_video(video_path, image_path, output_path, position="50:50",
 
 if __name__ == "__main__":
     # Example usage - replace these paths with your actual file paths
-    video_file = "../../video_tools/video/original/split/keep0.mp4"
+    video_file = "../../video_tools/output/original/split/keep0.mp4"
     image_file = "../../video_tools/logos/datadog.png"
-    output_video = "../../video_tools/video/original/burned_logo/burned_logo_video.mp4"
+    output_video = "../../video_tools/output/original/burned_logo/burned_logo_video.mp4"
     image_position = "50:50"  # Position of the image
     image_size = "250x250"  # Desired size of the image
 

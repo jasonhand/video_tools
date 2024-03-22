@@ -29,9 +29,9 @@ def burn_captions_into_video(video_path, srt_path, output_path):
         print(f"Error during video processing: {e}")
 
 if __name__ == "__main__":
-    video_file = "../../video/original/burned_logo_video.mp4"  # Update this path
+    video_file = "../../output/original/burned_logo_video.mp4"  # Update this path
     srt_file = "../../services/transcribe/transcripts/transcription.srt"  # Update this path
-    output_video = "../../video/original/captions/final_with_captions.mp4"  # Update this path
+    output_video = "../../output/original/captions/final_with_captions.mp4"  # Update this path
 
     # Ensure the output directory exists
     os.makedirs(os.path.dirname(output_video), exist_ok=True)

@@ -39,6 +39,6 @@ def generate_random_clips(input_file, num_clips=3, min_duration=30, max_duration
         print(f"Generated clip {i+1}: {output_file}")
 
 if __name__ == "__main__":
-    input_video_path = "../../video/original/combined_video_portrait.mp4"  # Replace with your input video path
-    output_directory = "../../video/original/split/"  # Replace with your desired output directory
+    input_video_path = "../../output/original/combined_video_portrait.mp4"  # Replace with your input video path
+    output_directory = "../../output/original/split/"  # Replace with your desired output directory
     generate_random_clips(input_video_path, num_clips=5, output_dir=output_directory)  # Adjust num_clips and output_dir as desired

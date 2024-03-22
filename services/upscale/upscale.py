@@ -14,7 +14,7 @@ def upscale_video(input_file, resolution='1920x1080'):
     # Extract the base name of the input file
     base_name = os.path.basename(input_file)
     # Generate the output file path with resolution prefix
-    output_file = os.path.join('../../video/upscaled', f"{resolution}-{base_name}")
+    output_file = os.path.join('../../output/upscaled', f"{resolution}-{base_name}")
     
     # Corrected logic to determine bitrate based on resolution
     bitrate = '8000k' if resolution == '1920x1080' else '8000k'
@@ -48,6 +48,6 @@ def upscale_video(input_file, resolution='1920x1080'):
 
 if __name__ == "__main__":
     # Example usage with a hardcoded input file and resolution
-    input_file = '../../video/original/input.mp4'  # Example input file
+    input_file = '../../output/original/input.mp4'  # Example input file
     resolution = '1920x1080'  # Change this variable to adjust resolution
     upscale_video(input_file, resolution)

@@ -19,6 +19,7 @@ def transcribe_audio_to_srt(audio_path):
     model = whisper.load_model("base")
 
     print("Transcribing audio. This may take a while depending on the audio length...")
+    print("--------------------------------------------------------------------------")
     result = model.transcribe(audio_path)
 
     srt_content = ""
@@ -34,8 +35,8 @@ def transcribe_audio_to_srt(audio_path):
     return srt_content
 
 if __name__ == "__main__":
-    audio_path = "../../video/mp3/audio-to-transcript.mp3"  # Update this path
-    srt_path = "../../services/transcribe/transcripts/transcription.srt" 
+    audio_path = "../../output/apple_audio/converted_mp3/Session4.mp3"  # Update this path
+    srt_path = "../../video_tools/output/transcriptions/Session4.srt" 
     
     transcription_srt = transcribe_audio_to_srt(audio_path)
     print("Transcription Completed with Timestamps:")

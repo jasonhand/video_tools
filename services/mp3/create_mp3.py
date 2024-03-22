@@ -24,6 +24,6 @@ def video_to_mp3(input_video_path, output_audio_path):
 
 if __name__ == "__main__":
     # Example usage
-    input_video = "../../video/original/burned_logo_video.mp4"  # Update this path
-    output_audio = "../../video/mp3/audio-to-transcript.mp3"  # Update this path
+    input_video = "../../output/original/burned_logo_video.mp4"  # Update this path
+    output_audio = "../../output/mp3/audio-to-transcript.mp3"  # Update this path
     video_to_mp3(input_video, output_audio)

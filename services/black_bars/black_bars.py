@@ -49,6 +49,6 @@ def auto_crop_video(input_file, output_file):
 
 if __name__ == "__main__":
     # Make sure to update these paths according to your actual file locations
-    input_video_path = '../../video/original/slides.mp4'
-    output_video_path = '../../video_tools/video/original/final.mp4'
+    input_video_path = '../../output/original/slides.mp4'
+    output_video_path = '../../video_tools/output/original/final.mp4'
     auto_crop_video(input_video_path, output_video_path)

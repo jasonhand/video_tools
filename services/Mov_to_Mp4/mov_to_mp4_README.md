@@ -1,7 +1,3 @@
-Certainly! Here's a README template for your Python script that converts `.MOV` files to `.MP4` format. You can adjust it according to any additional details you want to include, such as installation instructions for dependencies or additional functionality.
-
----
-
 # MOV to MP4 Converter
 
 This Python script easily converts video files from `.MOV` format to `.MP4` format, maintaining the original file's name but changing its extension. The script utilizes the `moviepy` library to handle the conversion process efficiently. This tool is perfect for users looking to convert videos for compatibility with different devices or media players that prefer the `.MP4` format.

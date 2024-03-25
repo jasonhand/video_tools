@@ -35,7 +35,7 @@ def get_interesting_words(text, num_keywords=20):
     return freq_dist.most_common(num_keywords)
 
 if __name__ == "__main__":
-    file_path = '/Users/jason.hand/Dev/video_tools/output/transcriptions/Session10.txt'  # Update this path
+    file_path = '/../../video_tools/output/transcriptions/Session10.txt'  # Update this path
     text = read_file(file_path)
 
     # Get interesting words

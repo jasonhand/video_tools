@@ -17,7 +17,7 @@ def burn_captions_into_video(video_path, srt_path, output_path):
     command = [
         'ffmpeg',
         '-i', video_path,
-        '-vf', f"subtitles={srt_path}:force_style='Alignment=2,FontSize=12,MarginV={margin_vertical}'",
+        '-vf', f"subtitles={srt_path}:force_style='Alignment=2,Fontname=DejaVu Serif,BorderStyle=0,FontSize=12,Shadow=2,MarginV={margin_vertical}'",
         '-codec:a', 'copy',  # Copy the audio without re-encoding
         output_path
     ]
@@ -29,7 +29,7 @@ def burn_captions_into_video(video_path, srt_path, output_path):
         print(f"Error during video processing: {e}")
 
 if __name__ == "__main__":
-    video_file = "../../output/original/burned_logo_video.mp4"  # Update this path
+    video_file = "../../output/burned_logo/burned_logo_video.mp4"  # Update this path
     srt_file = "../../output/transcriptions/transcription.srt"  # Update this path
     output_video = "../../output/captionsfinal_with_captions.mp4"  # Update this path
 

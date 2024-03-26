@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:03,399
+ we call that regularization when we are
+
+2
+00:00:03,399 --> 00:00:06,400
+ turning or estimates towards some value.
+
+3
+00:00:06,400 --> 00:00:08,000
+ It's zero, for instance.
+
+4
+00:00:08,000 --> 00:00:10,599
+ We see that customer two in red,
+
+5
+00:00:10,599 --> 00:00:13,400
+ it's like confidence interval on zero height
+
+6
+00:00:13,400 --> 00:00:14,599
+ that we will dive here.
+
+7
+00:00:14,599 --> 00:00:18,800
+ And it's not in the same range as we will dive
+
+8
+00:00:18,800 --> 00:00:21,000
+ if we looked only at customer two.
+
+9
+00:00:21,000 --> 00:00:22,600
+ So this model is ready,
+
+10
+00:00:22,600 --> 00:00:28,400
+ but estimating several arcs together
+
+11
+00:00:28,399 --> 00:00:30,000
+ and pulling the estimates.
+
+12
+00:00:30,000 --> 00:00:32,399
+ And what's interesting as well is that at the top you see
+
+13
+00:00:32,399 --> 00:00:34,199
+ we have like a confidence interval
+
+14
+00:00:34,199 --> 00:00:36,199
+ on the third party itself.
+
+15
+00:00:36,199 --> 00:00:39,399
+ And that's in the version modeling.
+
+16
+00:00:39,399 --> 00:00:43,600
+ It's derived from what we call the prior distribution.
+
+17
+00:00:43,600 --> 00:00:48,000
+ And it's just a way to model the third party
+
+18
+00:00:48,000 --> 00:00:49,000
+ on its own and saying,
+
+19
+00:00:49,000 --> 00:00:51,399
+ OK, what's the estimate we have
+
+20
+00:00:51,399 --> 00:00:54,399
+ for the error rate of this third party
+
+21
+00:00:54,399 --> 00:00:57,799
+ given all the data we are observing right now.
+
+22
+00:00:57,799 --> 00:01:00,599
+ And from that we can build another thing system.
+

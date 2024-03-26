@@ -17,5 +17,5 @@ def convert_mov_to_mp4(mov_file_path):
 
 # Example usage
 if __name__ == "__main__":
-    mov_file_path = '/Users/jason.hand/Dev/video_tools/output/original/mov_to_mp4/Demo4.2_OPS206_console_logs_v1.mov'  # Specify the path to your .MOV file
+    mov_file_path = '../../output/original/mov_to_mp4/Demo4.2_OPS206_console_logs_v1.mov'  # Specify the path to your .MOV file
     convert_mov_to_mp4(mov_file_path)

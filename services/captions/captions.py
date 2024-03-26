@@ -11,13 +11,13 @@ def burn_captions_into_video(video_path, srt_path, output_path):
     - output_path (str): Path where the output video will be saved.
     """
     # Adjust MarginV to position captions higher on the screen
-    margin_vertical = 55  # Adjust this value to move the captions higher
+    margin_vertical = 80  # Adjust this value to move the captions higher
 
     # Command to burn captions with adjusted positioning
     command = [
         'ffmpeg',
         '-i', video_path,
-        '-vf', f"subtitles={srt_path}:force_style='Alignment=2,MarginV={margin_vertical}'",
+        '-vf', f"subtitles={srt_path}:force_style='Alignment=2,FontSize=12,MarginV={margin_vertical}'",
         '-codec:a', 'copy',  # Copy the audio without re-encoding
         output_path
     ]
@@ -30,8 +30,8 @@ def burn_captions_into_video(video_path, srt_path, output_path):
 
 if __name__ == "__main__":
     video_file = "../../output/original/burned_logo_video.mp4"  # Update this path
-    srt_file = "../../services/transcribe/transcripts/transcription.srt"  # Update this path
-    output_video = "../../output/original/captions/final_with_captions.mp4"  # Update this path
+    srt_file = "../../output/transcriptions/transcription.srt"  # Update this path
+    output_video = "../../output/captionsfinal_with_captions.mp4"  # Update this path
 
     # Ensure the output directory exists
     os.makedirs(os.path.dirname(output_video), exist_ok=True)

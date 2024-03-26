@@ -35,8 +35,8 @@ def crop_video_to_portrait(source_file, target_file):
     subprocess.run(ffmpeg_cmd)
 
 def main():
-    input_dir = '/Users/jason.hand/Dev/video_tools/output/crop'  # Directory containing input videos
-    output_dir = '/Users/jason.hand/Dev/video_tools/output/crop/cropped'  # Directory for cropped videos
+    input_dir = '../../output/crop'  # Directory containing input videos
+    output_dir = '../../output/crop/cropped'  # Directory for cropped videos
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     

@@ -3,8 +3,8 @@ import random
 import subprocess
 
 # Configuration Variables
-input_dir = '/Users/jason.hand/Dev/video_tools/output/montage'
-output_dir = '/Users/jason.hand/Dev/video_tools/output/montage/output'
+input_dir = '../../output/montage'
+output_dir = '../../output/montage/output'
 final_video_length = 30  # Length of the final video in seconds
 num_output_files = 5  # Default number of final output videos to generate
 

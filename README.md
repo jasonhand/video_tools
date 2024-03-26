@@ -1,6 +1,8 @@
 # Video, Audio, and Transcription Tools 🎥
 
-This collection comprises various Python scripts designed to perform minor edits and enhancements to video files, improving their quality, accessibility, and presentation.
+A collection of Python scripts written by Jason Hand (and various AI developer tools) to address various tasks related to video, audio, transcription, and more. There are 20 separate actions that can be taken individually. 
+
+## Python Scripts
 
 1. **🚀 [2xSpeed - Video Speed Doubling](services/2xSpeed/2xSpeed_README.md)**: Accelerates the playback speed of video files, perfect for creating time-lapse effects or shortening content duration.
 
@@ -41,3 +43,6 @@ This collection comprises various Python scripts designed to perform minor edits
 19. **🔪 [Trimmer - Video Trimming Utility](services/trimmer/trimmer_README.md)**: Offers a straightforward method for trimming videos to a specific duration without re-encoding, preserving the original quality.
 
 20. **🆙 [Upscale - Video Upscaling Utility](services/upscale/upscale_README.md)**: Upscales videos to higher resolutions, incorporating optimal settings for enhanced video and audio quality.
+
+
+>**NOTE**: This project is very much under development and likely full of bugs, typos, and issues. 

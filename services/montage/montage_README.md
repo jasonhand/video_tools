@@ -1,57 +1,53 @@
-# Video Montage
+# Multi-Version Video Montage Generator
 
-This Python script is designed to create a video montage by clipping random sections from each video in a specified directory and merging them into a new video of a predetermined length. The script can handle videos of various formats, ensuring the final montage is outputted in portrait mode, making it especially useful for preparing content tailored for platforms favoring vertical video formats.
+This Python script automates the creation of multiple video montages from a collection of video clips. It's designed to take video files from a specified input directory, clip random sections from each, and then concatenate these clips into several final montage videos, each of a specified duration. The script is especially useful for generating multiple variations of video montages, allowing users to choose their preferred version from the outputs.
 
 ## Features
 
-- **Automatic Video Cropping**: Automatically crops videos to a portrait orientation, focusing on the center.
-- **Flexible Duration Setting**: Allows specification of the total duration of the final montage video.
-- **Supports Multiple Video Formats**: Capable of processing common video file formats, including `.mp4`, `.mov`, `.avi`, and `.mkv`.
-- **Batch Processing**: Processes all video files in the specified input directory, creating a seamless montage.
+- **Multiple Output Versions**: Generates a specified number of montage videos, each with a unique set of clips.
+- **Customizable Final Video Length**: Allows specifying the desired length for each montage video.
+- **Supports Various Video Formats**: Compatible with popular video formats such as `.mp4`, `.mov`, `.avi`, and `.mkv`.
+- **Automated Video Processing**: Leverages FFmpeg for clipping and concatenating video sections, streamlining the video creation process.
 
 ## Prerequisites
 
-- **Python 3**: The script is written for Python 3 and requires it to be installed on your system.
-- **FFmpeg**: This tool relies on FFmpeg for video processing, which must be installed and accessible from your system's command line.
+- **FFmpeg**: Ensure FFmpeg is installed on your system and accessible from the command line.
+- **Python 3**: This script requires Python 3 to run.
 
 ## Installation
 
-1. **Install FFmpeg**: Ensure FFmpeg is installed on your system. It can be downloaded from the [official FFmpeg website](https://ffmpeg.org/download.html) or installed via your system's package manager.
-2. **Download the Script**: Clone or download this script to your local machine.
+1. **Install FFmpeg**: Download and install FFmpeg from [the official website](https://ffmpeg.org/download.html) or use your system's package manager. Verify the installation by running `ffmpeg -version` in your command line or terminal.
+
+2. **Prepare the Script**: Clone or download this script to your local system in a directory of your choice.
 
 ## Usage
 
-1. **Prepare Input Videos**: Place the videos you want to include in the montage into the input directory.
-2. **Configure the Script**: Open the script in a text editor. Update the `input_dir`, `output_dir`, `final_video_length`, and `output_filename` variables to suit your project needs:
+1. **Configure the Script**:
+   - Update the `input_dir` variable to the path of your directory containing the input video files.
+   - Adjust the `output_dir` variable to specify where you want the montage videos to be saved.
+   - Set the `final_video_length` variable to determine the duration of each final montage video (in seconds).
+   - Modify the `num_output_files` variable to change the number of montage videos to generate.
 
-   ```python
-   input_dir = '/path/to/input_videos'
-   output_dir = '/path/to/output_videos'
-   final_video_length = 30  # In seconds
-   output_filename = 'final_output.mp4'
-   ```
+2. **Run the Script**:
+   - Navigate to the script's directory in your terminal or command line.
+   - Execute the script by running `python3 script_name.py`, replacing `script_name.py` with the actual name of the script file.
 
-3. **Run the Script**: Navigate to the script's directory in your command line interface and execute the script:
+## How It Works
 
-   ```bash
-   python3 script_name.py
-   ```
+- The script first scans the input directory for video files matching the supported formats.
+- It then clips a random section from each video, aiming to fill the specified `final_video_length` for the montage.
+- These clips are concatenated to form a montage video. This process is repeated `num_output_files` times to create multiple montage versions.
+- Finally, the script cleans up any temporary files generated during the process.
 
-   The script will process the videos in the input directory and generate a final montage video in the output directory.
+## Customization
 
-## Functionality
+- **Video Duration**: Adjust the `final_video_length` variable to increase or decrease the duration of the montage videos.
+- **Number of Montages**: Increase or decrease the `num_output_files` variable to change how many versions of the montage are created.
 
-- **`get_video_length(filename)`**: Retrieves the length of a video.
-- **`clip_random_section(source_file, duration, index)`**: Clips a random section from a source video.
-- **`concatenate_clips(clip_paths, output_file)`**: Merges the clipped sections into a single montage video.
-- **`main()`**: Orchestrates the video processing workflow, from clipping to concatenation.
+## Cleanup
 
-## Notes
-
-- Videos are cropped to maintain a portrait orientation for the final output.
-- The script processes each video file in the specified directory, ignoring non-video files.
-- Temporary files generated during the process are cleaned up automatically.
+The script automatically deletes temporary clip files and the temporary inputs list used for concatenation, keeping your output directory clean and containing only the final montage videos.
 
 ## License
 
-This script is open-source and available for personal and commercial use.
+This script is provided "as is", without warranty of any kind, express or implied. Feel free to use, modify, and distribute as needed.

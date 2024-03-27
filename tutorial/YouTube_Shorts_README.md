@@ -2,7 +2,7 @@
 
 Following a [Datadog On episode](https://datadogon.datadoghq.com/episodes/datadog-on-data-science/) broadcast using Zoom, there are several video assets that are generated. Using 2 of these video assets, we can concactenate the speaker and slides into a single portrait format video.
 
-![FinalResult](../../video_tools/tutorial/tutorial1.png)
+![FinalResult](tutorial1.png)
 
 ## Steps
 

@@ -1,10 +1,10 @@
 # Using the tools to generate a Trip Report
 
-![GTCReport](../../video_tools/tutorial/tutorial3.png)
+![GTCReport](tutorial3.png)
 
-![ChunkedTranscript](../../video_tools/tutorial/tutorial2.png)
+![ChunkedTranscript](tutorial2.png)
 
-![CroppedVideo](../../video_tools/tutorial/tutorial4.png)
+![CroppedVideo](tutorial4.png)
 
 ## Steps
 

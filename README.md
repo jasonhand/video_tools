@@ -2,7 +2,7 @@
 
 A collection of Python scripts written by Jason Hand (and various AI developer tools) to address various tasks related to video, audio, transcription, and more. There are 20 separate actions that can be taken individually. 
 
-## Tutorials (2 Use Cases currently being documented)
+## How-to Guides
 
 - [Create YouTube Shorts for Datadog On](tutorial/YouTube_Shorts_README.md)
 - [Create Trip Report Assets and Content](tutorial/TripReports_README.md)

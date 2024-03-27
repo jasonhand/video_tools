@@ -8,9 +8,15 @@ Following a [Datadog On episode](https://datadogon.datadoghq.com/episodes/datado
 
 1. The slides video may contain black bars at the top and bottom of the output. These will need to be removed before merging the 2 videos. Use the **🔲 [Black_bars - Black Bar Removal](services/black_bars/black_bars_README.md)** script to accomplish this.
 
+![BlackBars](black_bars.png)
+
 2. Next, you can use the **🖼 [Stacked - Portrait Stacked](services/stacked/stacked_README.md)** script to merge both videos with the speaker above the slides in a portrait format
 
+![Stacked](stacked.png)
+
 3. Using the **📌 [Splitter - Video Clip Processor](services/splitter/splitter_README.md)** script, generate multiple clips from the longer video to find the one you want. 
+
+![Splitter](splitter.png)
 
 4. Now that you have the clip you want to share, we need to extract the audio and transcribe it. Use the **🎵 [Mp3 - Video to MP3 Conversion Utility](services/mp3/mp3_README.md)** script to create a `.mp3` of the audio for the clip.
 
@@ -20,7 +26,7 @@ Following a [Datadog On episode](https://datadogon.datadoghq.com/episodes/datado
 
 7. Burning a logo or QR code can be accomplished using the **🖼️ [Burn Logo - Logo Overlay Utility](services/burn_logo/burn_logo_README.md)** script.
 
-## Scripts Used In Each Step
+## Scripts Used
 
 1. **🔲 [Black_bars - Black Bar Removal](services/black_bars/black_bars_README.md)**: Efficiently removes black bars from videos, resizing and cropping to fit a specified resolution.
 

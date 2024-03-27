@@ -23,7 +23,7 @@ Audio was recorded for each session. This was done on an iPhone. The output file
 6. The **[Montage - Concactenate Multiple Videos](services/montage_README.md)** script will clip random sections from multiple videos and combine them into 5 different videos you can choose from.
 
 
-## Written Content
+## Scripts Used
 
 1. **🎵 [Apple Audio to MP3 Converter](services/apple-to-mp3/convert_m4a_to_mp3_README.md)**: converts M4A audio files to MP3 format using FFmpeg.
 
@@ -32,8 +32,6 @@ Audio was recorded for each session. This was done on an iPhone. The output file
 3. **📄 [Chunk](services/chunk/chunk_README.md)**: chunks a large text file into smaller sections, each with a specified maximum number of tokens, and saves the output as a new text file.
 
 4. **🔍 [Key Words](services/key_words/key_words_README.md)**: Analyze a text file, filtering out common "stop words" and additional uninteresting words to identify and count the most meaningful words.
-
-## Media Content
 
 5. **[Crop - Crop videos segments](services/clip/clip_README.md)**: automates the process of cropping videos to a portrait orientation, focusing on the center of the video.
 

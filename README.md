@@ -2,6 +2,12 @@
 
 A collection of Python scripts written by Jason Hand (and various AI developer tools) to address various tasks related to video, audio, transcription, and more. There are 20 separate actions that can be taken individually. 
 
+## Tutorials (2 Use Cases currently being documented)
+
+- [Create YouTube Shorts for Datadog On](tutorial/YouTube_Shorts_README.md)
+- [Create Trip Report Assets and Content](tutorial/TripReports_README.md)
+>NOTE: These are both incomplete as of 3/27
+
 ## Python Scripts
 
 1. **🚀 [2xSpeed - Video Speed Doubling](services/2xSpeed/2xSpeed_README.md)**: Accelerates the playback speed of video files, perfect for creating time-lapse effects or shortening content duration.

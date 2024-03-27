@@ -7,9 +7,9 @@ A collection of Python scripts written by Jason Hand (and various AI developer t
 - [Create YouTube Shorts for Datadog On](tutorial/YouTube_Shorts_README.md)
 - [Create Trip Report Assets and Content](tutorial/TripReports_README.md)
 
-![FinalResult](/../video_tools/tutorial/tutorial1.png)
+![FinalResult](/tutorial/tutorial1.png)
 
-![GTCReport](/../video_tools/tutorial/tutorial3.png)
+![GTCReport](/tutorial/tutorial3.png)
 
 ## Python Scripts
 

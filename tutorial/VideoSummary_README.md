@@ -1,10 +1,12 @@
 # Using the tools to generate a summary of a video presentation
 
 1. Extract audio from a video file using the [Mp3 - Video to MP3 Conversion Utility](/services/mp3/mp3_README.md) script.
-2. Use the [Transcribe TXT - Generates (TXT) Transcription from Mp3](/services/transcribe/transcribeTXT_README.md) script to generate a transcription of the audio.
+2. Use the [Transcribe TXT - Generates (TXT) Transcription from Mp3](/services/transcribe/transcribeTXT_README.md) script to generate a transcription of the audio. This step can take a while to run.
 3. Chunk the audio into smaller sizes to fit the submission size restrictions for ChatGPT using the [Chunk](/services/chunk/chunk_README.md) script.
 4. Submit to ChatGPT4 in sections and request a summary of the transcript including key topics, takeaways, and interesting quotes.
 
+## Video Walk through
+The video below walks you through the steps above (until I hit a rate limit error for ChatGPT4). In less than 10 minutes you can have a full summary of any video.
 [![VideoSummary](VideoSummary.png)](https://youtu.be/LY_L0Hw8VRg)
 
 ---

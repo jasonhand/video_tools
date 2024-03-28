@@ -34,7 +34,7 @@ def chunk_text_file(input_file_path, output_file_path, max_tokens=4000):
     print(f"Chunked text has been saved to {output_file_path}")
 
 if __name__ == "__main__":
-    input_file_path = "/Users/jason.hand/Dev/video_tools/output/transcriptions/Session19.txt"
-    output_file_path = os.path.join(os.path.dirname(input_file_path), "session19_chunked.txt")
+    input_file_path = "/Users/jason.hand/Dev/video_tools/output/transcriptions/audio-to-transcript.txt"
+    output_file_path = os.path.join(os.path.dirname(input_file_path), "Video_transcription_chunked.txt")
 
     chunk_text_file(input_file_path, output_file_path)

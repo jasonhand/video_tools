@@ -25,7 +25,7 @@ def transcribe_audio_to_text(audio_path, output_directory):
         print("No transcription result found.")
 
 if __name__ == "__main__":
-    audio_path = "../../output/apple_audio/converted_mp3/Session19.mp3"
+    audio_path = "/Users/jason.hand/Dev/video_tools/output/mp3/audio-to-transcript.mp3"
     output_directory = "../../output/transcriptions"
     os.makedirs(output_directory, exist_ok=True)
     transcribe_audio_to_text(audio_path, output_directory)
